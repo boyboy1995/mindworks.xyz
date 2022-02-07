@@ -2,7 +2,6 @@ import Head from "next/head";
 import Hero from "../components/hero";
 import Navbar from "../components/navbar";
 import SectionTitle from "../components/sectionTitle";
-
 import { benefitOne, benefitTwo } from "../components/data";
 import Video from "../components/video";
 import Benefits from "../components/benefits";
@@ -28,17 +27,33 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Nextly - Free Nextjs & TailwindCSS Landing Page Template</title>
-        <meta
-          name="description"
-          content="Nextly is a free landing page template built with next.js & Tailwind CSS"
-        />
-        <link rel="icon" href="/favicon.ico" />
+        <title>
+          Mindworks Interactive - Future Forward Digital Design Partner
+        </title>
+        <meta name="description" content="Mindworks Interactive" />
+        <link rel="icon" href="/favicon.png" />
+<script src="three.r119.min.js"></script>
+<script src="vanta.halo.min.js"></script>
+{/* <script>
+VANTA.HALO({
+  el: "#your-element-selector",
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00
+})
+</script> */}
       </Head>
 
       <Navbar />
       <Hero />
-      <SectionTitle
+      <SectionTitle pretitle="" title="How can we help you?">
+        {/* Answer your customers possible questions here, it will increase the
+        conversion rate as well as support or chat requests. */}
+      </SectionTitle>
+      <Faq />
+      {/* <SectionTitle
         pretitle="Nextly Benefits"
         title=" Why should you use this landing page">
         Nextly is a free landing page & marketing website template for startups
@@ -62,14 +77,10 @@ export default function Home() {
         Use this section to highlight your popular customers.
       </SectionTitle>
       <Testimonials />
-      <SectionTitle pretitle="FAQ" title="Frequently Asked Questions">
-        Answer your customers possible questions here, it will increase the
-        conversion rate as well as support or chat requests.
-      </SectionTitle>
-      <Faq />
+
       <Cta />
       <Footer />
-      <PopupWidget />
+      <PopupWidget /> */}
     </>
   );
 }

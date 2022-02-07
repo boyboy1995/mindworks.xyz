@@ -9,6 +9,12 @@ module.exports = {
     extend: {
       colors: {
         trueGray: colors.trueGray,
+        'mindworks-lightpink': '#D1AAD7',
+        'mindworks-pink': '#C88BC4',
+        'mindworks-purple': '#7B8FDD',
+        'mindworks-skyblue': '#BBDEF2',
+        'mindworks-blue': '#8CC3F2',
+        
       },
     },
     fontFamily: {
@@ -19,5 +25,5 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [require("@tailwindcss/aspect-ratio")],
+  plugins: [require("@tailwindcss/aspect-ratio"), require("tailwindcss-font-inter")],
 };
