@@ -1,12 +1,37 @@
 import React from 'react'
+import { useEffect, useRef, useState } from "react";
+import * as THREE from "three";
+import NET from "vanta/dist/vanta.net.min";
+import dynamic from 'next/dynamic'
 import BIRDS from 'vanta/dist/vanta.birds.min'
 import Image from "next/image";
 import Container from "./container";
 import heroImg from "../public/img/hero.png";
+
 export default function Hero() {
+
+  const [vantaEffect, setVantaEffect] = useState(0);
+  const vantaRef = useRef(null);
+  useEffect(() => {
+    if (!vantaEffect) {
+      setVantaEffect(
+        NET({
+          el: "#halo",
+          THREE,
+          color: 0x14b679,
+          backgroundColor: 0x171717,
+          maxDistance: 34.0,
+        })
+      );
+    }
+    return () => {
+      if (vantaEffect) vantaEffect.destory();
+    };
+  }, [vantaEffect]);
+
   return (
     <>
-      <Container className="flex flex-wrap ">
+      <Container className="flex flex-wrap">
         <div className="flex items-center lg:w-3/5 lg:pt-32">
           <div className="max-w-5xl mb-8 ">
             <h1 className="text-4xl font-semibold leading-snug tracking-tight text-gray-800 lg:text-4xl lg:leading-tight xl:text-7xl xl:leading-tight dark:text-white">
@@ -47,8 +72,9 @@ export default function Hero() {
             </div>
           </div>
         </div>
-        <div className="flex items-center justify-center w-full lg:w-2/5">
-          <div className="">
+        <div className="flex items-center justify-center w-full lg:w-2/5" id="halo" ref={vantaRef}>
+          
+            <main className="" ref={vantaRef}></main>
             {/* <Image
               src={heroImg}
               width="616"
@@ -58,7 +84,7 @@ export default function Hero() {
               loading="eager"
               placeholder="blur"
             /> */}
-          </div>
+          
         </div>
       </Container>
       <Container>

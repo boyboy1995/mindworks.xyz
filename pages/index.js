@@ -10,6 +10,10 @@ import Testimonials from "../components/testimonials";
 import Cta from "../components/cta";
 import Faq from "../components/faq";
 import PopupWidget from "../components/popupWidget";
+const DynamicHero = dynamic(() => import('../components/hero'))
+import dynamic from 'next/dynamic'
+
+
 
 //import dynamic from "next/dynamic";
 
@@ -32,22 +36,10 @@ export default function Home() {
         </title>
         <meta name="description" content="Mindworks Interactive" />
         <link rel="icon" href="/favicon.png" />
-<script src="three.r119.min.js"></script>
-<script src="vanta.halo.min.js"></script>
-{/* <script>
-VANTA.HALO({
-  el: "#your-element-selector",
-  mouseControls: true,
-  touchControls: true,
-  gyroControls: false,
-  minHeight: 200.00,
-  minWidth: 200.00
-})
-</script> */}
       </Head>
 
       <Navbar />
-      <Hero />
+      <DynamicHero />
       <SectionTitle pretitle="" title="How can we help you?">
         {/* Answer your customers possible questions here, it will increase the
         conversion rate as well as support or chat requests. */}
