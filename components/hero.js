@@ -3,7 +3,6 @@ import { useEffect, useRef, useState } from "react";
 import * as THREE from "three";
 import NET from "vanta/dist/vanta.net.min";
 import dynamic from 'next/dynamic'
-import BIRDS from 'vanta/dist/vanta.birds.min'
 import Image from "next/image";
 import Container from "./container";
 import heroImg from "../public/img/hero.png";
@@ -18,9 +17,13 @@ export default function Hero() {
         NET({
           el: "#halo",
           THREE,
-          color: 0x14b679,
+          color: 0x7B8FDD,
           backgroundColor: 0x171717,
-          maxDistance: 34.0,
+          minHeight: 200.00,
+          minWidth: 200.00,
+          points: 5.00,
+          maxDistance: 30.00,
+          spacing: 10.00
         })
       );
     }
