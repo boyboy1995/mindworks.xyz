@@ -2,11 +2,16 @@ import React from "react";
 import Container from "./container";
 import { Disclosure } from "@headlessui/react";
 import { ChevronUpIcon } from "@heroicons/react/solid";
+import SectionTitle from "../components/sectionTitle";
 
 export default function Faq() {
   return (
     <Container className="!p-0">
       <div className="w-full max-w-2xl p-2 mx-auto">
+        <SectionTitle pretitle="" title="How can we help you?">
+          {/* Answer your customers possible questions here, it will increase the
+        conversion rate as well as support or chat requests. */}
+        </SectionTitle>
         {faqdata.map((item, index) => (
           <div key={item.question} className="mb-5">
             <Disclosure>
@@ -36,7 +41,8 @@ export default function Faq() {
 const faqdata = [
   {
     question: "Innovation Consulting",
-    answer: "Make your digital transformation journey super simple, safe, and aligned with your specific business needs. We're good at strategy planning for both enterprises and SMBs, IT audit, business process analysis, and more.",
+    answer:
+      "Make your digital transformation journey super simple, safe, and aligned with your specific business needs. We're good at strategy planning for both enterprises and SMBs, IT audit, business process analysis, and more.",
   },
   {
     question: "Digital Transformation",
@@ -63,5 +69,4 @@ const faqdata = [
     answer:
       "No, we don't offer technical support for free downloads. Please purchase a support plan to get 6 months of support.",
   },
-
 ];
