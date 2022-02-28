@@ -12,7 +12,6 @@ function MyApp({ Component, pageProps, router }: AppProps) {
     threeScript.setAttribute(
       "src",
       "https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"
-      // "https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap",
     );
 
     document.getElementsByTagName("head")[0].appendChild(threeScript);

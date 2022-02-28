@@ -2,7 +2,7 @@ import React from "react";
 import Container from "./container";
 import { Disclosure } from "@headlessui/react";
 import { ChevronUpIcon } from "@heroicons/react/solid";
-import SectionTitle from "../components/sectionTitle";
+import SectionTitle from "./sectionTitle";
 
 export default function Partner() {
   return (

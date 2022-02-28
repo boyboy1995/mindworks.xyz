@@ -10,6 +10,7 @@ import heroImg from "../public/img/hero.png";
 export default function Hero() {
   const [vantaEffect, setVantaEffect] = useState(0);
   const vantaRef = useRef(null);
+  
   useEffect(() => {
     if (!vantaEffect) {
       setVantaEffect(
@@ -26,7 +27,10 @@ export default function Hero() {
         })
       );
     }
+    
     return () => {
+
+      
       if (vantaEffect) vantaEffect.destory();
     };
   }, [vantaEffect]);

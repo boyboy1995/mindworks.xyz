@@ -3,13 +3,13 @@ import Image from "next/image";
 import Container from "./container";
 import { Disclosure } from "@headlessui/react";
 import { ChevronUpIcon } from "@heroicons/react/solid";
-import SectionTitle from "../components/sectionTitle";
+import SectionTitle from "./sectionTitle";
 
-export default function We() {
+const We = () => {
   return (
     <Container>
       <div className="container flex flex-wrap py-[80px] mx-auto">
-        <h2 className="mb-2 text-4xl font-semibold leading-snug tracking-tight sm:text-3xl lg:text-4xl lg:leading-tight xl:text-7xl dark:text-mindworks-85white md:w-2/5">
+        <h2 className="mb-2 text-4xl font-bold font-['Poppins'] leading-snug tracking-tight sm:text-3xl lg:text-4xl lg:leading-tight xl:text-7xl dark:text-mindworks-85white md:w-2/5">
           Who we are
         </h2>
         <div className="md:w-3/5 md:pl-6">
@@ -30,23 +30,23 @@ export default function We() {
         </div>
       </div>
 
-      <h2 className="mb-2 text-4xl font-semibold leading-snug tracking-tight sm:text-3xl lg:text-4xl lg:leading-tight xl:text-7xl dark:text-mindworks-85white md:w-2/5">
+      <h2 className="mb-2 text-4xl font-bold font-['Poppins'] leading-snug tracking-tight sm:text-3xl lg:text-4xl lg:leading-tight xl:text-7xl dark:text-mindworks-85white md:w-2/5">
         What we do
       </h2>
-      <section class="text-gray-600 body-font">
-        <div class="container px-5 py-24 text-gray-300">
-          <div class="flex md:space-x-[40px] justify-center">
-            <div class="mb-10 flex flex-col item-start ">
-              <div class="max-w-[400px] rounded-[16px] bg-gray-900 p-[20px]">
-                <div class="flex items-center relative lg:mb-5 lg:pl-[31px] lg:pt-[10px]">
+      <section className="text-gray-600 body-font">
+        <div className="container px-5 py-24 text-gray-300">
+          <div className="flex md:space-x-[40px] justify-center">
+            <div className="mb-10 flex flex-col item-start ">
+              <div className="max-w-[400px] rounded-[16px] bg-gray-900 p-[20px]">
+                <div className="flex items-center relative lg:mb-5 lg:pl-[31px] lg:pt-[10px]">
                   <img src="./img/whatwedo.svg">
                   </img>
                 </div>
-                <div class="px-8 pb-4">
-                  <h2 class="text-mindworks-85white text-[24px] title-font font-medium mb-2">
+                <div className="px-8 pb-4">
+                  <h2 className="text-mindworks-85white text-[24px] title-font font-medium mb-2">
                     Innovation Consulting
                   </h2>
-                  <p class="leading-relaxed text-[20px] pt-[16px] text-mindworks-gray">
+                  <p className="leading-relaxed text-[20px] pt-[16px] text-mindworks-gray">
                     What you envision to be the future of your business drives
                     the technology, not the other way around. We help you
                     formulate a new vision and bring it to life.
@@ -54,17 +54,17 @@ export default function We() {
                 </div>
               </div>
             </div>
-            <div class="mb-10 flex flex-col item-start ">
-              <div class="max-w-[400px] rounded-[16px] bg-gray-900 p-[20px]">
-                <div class="flex items-center relative lg:mb-5 lg:pl-[31px] lg:pt-[10px]">
+            <div className="mb-10 flex flex-col item-start ">
+              <div className="max-w-[400px] rounded-[16px] bg-gray-900 p-[20px]">
+                <div className="flex items-center relative lg:mb-5 lg:pl-[31px] lg:pt-[10px]">
                   <img src="./img/whatwedo.svg">
                   </img>
                 </div>
-                <div class="px-8 pb-4">
-                  <h2 class="text-mindworks-85white text-[24px] title-font font-medium mb-2">
+                <div className="px-8 pb-4">
+                  <h2 className="text-mindworks-85white text-[24px] title-font font-medium mb-2">
                   Digital Transformation
                   </h2>
-                  <p class="leading-relaxed text-[20px] pt-[16px] text-mindworks-gray">
+                  <p className="leading-relaxed text-[20px] pt-[16px] text-mindworks-gray">
                     What you envision to be the future of your business drives
                     the technology, not the other way around. We help you
                     formulate a new vision and bring it to life.
@@ -72,17 +72,17 @@ export default function We() {
                 </div>
               </div>
             </div>
-            <div class="mb-10 flex flex-col item-start ">
-              <div class="max-w-[400px] rounded-[16px] bg-gray-900 p-[20px]">
-                <div class="flex items-center relative lg:mb-5 lg:pl-[31px] lg:pt-[10px]">
+            <div className="mb-10 flex flex-col item-start ">
+              <div className="max-w-[400px] rounded-[16px] bg-gray-900 p-[20px]">
+                <div className="flex items-center relative lg:mb-5 lg:pl-[31px] lg:pt-[10px]">
                   <img src="./img/whatwedo.svg">
                   </img>
                 </div>
-                <div class="px-8 pb-4">
-                  <h2 class="text-mindworks-85white text-[24px] title-font font-medium mb-2">
+                <div className="px-8 pb-4">
+                  <h2 className="text-mindworks-85white text-[24px] title-font font-medium mb-2">
                   Software Engineering
                   </h2>
-                  <p class="leading-relaxed text-[20px] pt-[16px] text-mindworks-gray">
+                  <p className="leading-relaxed text-[20px] pt-[16px] text-mindworks-gray">
                     What you envision to be the future of your business drives
                     the technology, not the other way around. We help you
                     formulate a new vision and bring it to life.
@@ -91,18 +91,18 @@ export default function We() {
               </div>
             </div>
           </div>
-          <div class="flex md:space-x-[40px] justify-center">
-            <div class="mb-10 flex flex-col item-start">
-              <div class="max-w-[400px] rounded-[16px] bg-gray-900 p-[20px]">
-                <div class="flex items-center relative lg:mb-5 lg:pl-[31px] lg:pt-[10px]">
+          <div className="flex md:space-x-[40px] justify-center">
+            <div className="mb-10 flex flex-col item-start">
+              <div className="max-w-[400px] rounded-[16px] bg-gray-900 p-[20px]">
+                <div className="flex items-center relative lg:mb-5 lg:pl-[31px] lg:pt-[10px]">
                   <img src="./img/whatwedo.svg">
                   </img>
                 </div>
-                <div class="px-8 pb-4">
-                  <h2 class="text-mindworks-85white text-[24px] title-font font-medium mb-2">
+                <div className="px-8 pb-4">
+                  <h2 className="text-mindworks-85white text-[24px] title-font font-medium mb-2">
                   Big Data & Analytics
                   </h2>
-                  <p class="leading-relaxed text-[20px] pt-[16px] text-mindworks-gray">
+                  <p className="leading-relaxed text-[20px] pt-[16px] text-mindworks-gray">
                     What you envision to be the future of your business drives
                     the technology, not the other way around. We help you
                     formulate a new vision and bring it to life.
@@ -110,17 +110,17 @@ export default function We() {
                 </div>
               </div>
             </div>
-            <div class="mb-10 flex flex-col item-start">
-              <div class="max-w-[400px] rounded-[16px] bg-gray-900 p-[20px]">
-                <div class="flex items-center relative lg:mb-5 lg:pl-[31px] lg:pt-[10px]">
+            <div className="mb-10 flex flex-col item-start">
+              <div className="max-w-[400px] rounded-[16px] bg-gray-900 p-[20px]">
+                <div className="flex items-center relative lg:mb-5 lg:pl-[31px] lg:pt-[10px]">
                   <img src="./img/whatwedo.svg">
                   </img>
                 </div>
-                <div class="px-8 pb-4">
-                  <h2 class="text-mindworks-85white text-[24px] title-font font-medium mb-2">
+                <div className="px-8 pb-4">
+                  <h2 className="text-mindworks-85white text-[24px] title-font font-medium mb-2">
                   Artificial Intelligence
                   </h2>
-                  <p class="leading-relaxed text-[20px] pt-[16px] text-mindworks-gray">
+                  <p className="leading-relaxed text-[20px] pt-[16px] text-mindworks-gray">
                     What you envision to be the future of your business drives
                     the technology, not the other way around. We help you
                     formulate a new vision and bring it to life.
@@ -128,17 +128,17 @@ export default function We() {
                 </div>
               </div>
             </div>
-            <div class="mb-10 flex flex-col item-start">
-              <div class="max-w-[400px] rounded-[16px] bg-gray-900 p-[20px]">
-                <div class="flex items-center relative lg:mb-5 lg:pl-[31px] lg:pt-[10px]">
+            <div className="mb-10 flex flex-col item-start">
+              <div className="max-w-[400px] rounded-[16px] bg-gray-900 p-[20px]">
+                <div className="flex items-center relative lg:mb-5 lg:pl-[31px] lg:pt-[10px]">
                   <img src="./img/whatwedo.svg">
                   </img>
                 </div>
-                <div class="px-8 pb-4">
-                  <h2 class="text-mindworks-85white text-[24px] title-font font-medium mb-2">
+                <div className="px-8 pb-4">
+                  <h2 className="text-mindworks-85white text-[24px] title-font font-medium mb-2">
                   Extended Reality
                   </h2>
-                  <p class="leading-relaxed text-[20px] pt-[16px] text-mindworks-gray">
+                  <p className="leading-relaxed text-[20px] pt-[16px] text-mindworks-gray">
                     What you envision to be the future of your business drives
                     the technology, not the other way around. We help you
                     formulate a new vision and bring it to life.
@@ -152,5 +152,5 @@ export default function We() {
       </section>
     </Container>
   );
-
-}
+};
+export default We;
