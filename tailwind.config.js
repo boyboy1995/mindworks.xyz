@@ -9,6 +9,18 @@ module.exports = {
     extend: {
       colors: {
         trueGray: colors.trueGray,
+        transparent: 'transparent',
+        current: 'currentColor',
+        red: colors.red,
+        blue: colors.sky,
+        yellow: colors.amber,
+        fuchsia: colors.fuchsia,
+        slate: colors.slate,
+        zinc: colors.zinc,
+        'mindworks-85black': '#262626',
+        'mindworks-85white': '#d9d9d9',
+        'mindworks-gray': '#aaaaaa',
+        'mindworks-black': '#171717',
         'mindworks-lightpink': '#D1AAD7',
         'mindworks-pink': '#C88BC4',
         'mindworks-purple': '#7B8FDD',

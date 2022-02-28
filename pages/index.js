@@ -11,6 +11,7 @@ import Cta from "../components/cta";
 import Faq from "../components/faq";
 import Partner from "../components/partner";
 import We from "../components/we";
+import Process from "../components/process";
 import PopupWidget from "../components/popupWidget";
 const DynamicHero = dynamic(() => import('../components/hero'))
 import dynamic from 'next/dynamic'
@@ -45,6 +46,8 @@ export default function Home() {
       <Partner/>
       <Faq />
       <We />
+      <Process />
+      <Footer/>
       </>
   );
 }

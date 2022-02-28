@@ -38,7 +38,7 @@ export default function Hero() {
           <div className="max-w-5xl mb-8 ">
             <h1 className="text-4xl font-semibold leading-snug tracking-tight text-gray-800 lg:text-4xl lg:leading-tight xl:text-7xl xl:leading-tight dark:text-white">
               We make <br></br>{" "}
-              <span className="lg:pl-10 font-inter font-semibold lg:text-[72px] text-transparent bg-gradient-to-r from-mindworks-pink via-mindworks-purple to-mindworks-blue bg-clip-text">
+              <span className="lg:pl-10 font-inter font-semibold lg:text-[72px] text-transparent bg-gradient-to-r from-[#1CD6FC] via-[#42FCC3] to-[#4D39A8] bg-clip-text">
                 beautiful apps
               </span>{" "}
               <br></br>{" "}
@@ -57,7 +57,7 @@ export default function Hero() {
                 href="https:"
                 target="_blank"
                 rel="noopener"
-                className="py-4 text-lg font-medium text-center text-white underline rounded-md hover:opacity-80 "
+                className="py-4 text-lg font-medium text-center underline rounded-md text-mindworks-85black dark:text-gray-300 hover:opacity-80 "
               >
                 see what we do
               </a>
