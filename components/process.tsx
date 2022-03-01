@@ -7,6 +7,8 @@ import SectionTitle from "./sectionTitle";
 import { defaultMaxListeners } from "stream";
 
 const Process = () => {
+
+
   return (
     <Container>
       <div className="md:pl-6">
@@ -23,19 +25,25 @@ const Process = () => {
         </p>
       </div>
 
-          < div className="justify-center flex relative lg:mb-5 lg:w-auto m-auto">
-          <img src="./img/arrow1.svg"></img>
+          < div className="relative flex justify-center m-auto lg:mb-5 lg:w-auto">
+          <img src="img/arrow1.svg"></img>
           </div>
-      <div className="justify-center flex items-center relative lg:mb-5 lg:w-auto m-auto">
-        <div className="justify-center flex flex-row items-center relative lg:mb-5 lg:w-auto m-auto">
-          <div className="justify-center flex relative lg:mb-5 lg:w-auto m-auto">
-            <img src="./img/vector.svg"></img>
+      <div className="relative flex items-center justify-center m-auto lg:mb-5">
+        <div className="relative flex flex-row items-center justify-center m-auto lg:mb-5 lg:w-auto">
+          <div className="relative flex justify-center m-auto bg-no-repeat lg:mb-5 bg-auto lg:w-[200px] lg:h-[250px]" style={{
+              backgroundImage: `url("./img/vector.svg")`,
+            }}>
+                      <p className="md:w-3/5 md:mb-[80px] leading-relaxed text-base text-[20px] dark:text-gray-400">
+          <span className="">We work in agile!</span>{" "}
+        </p>
+              
+            
           </div>
-          <div className="justify-center flex relative lg:mb-5 lg:w-auto m-auto">
-            <img src="./img/vector.svg"></img>
+          <div className="relative flex justify-center m-auto lg:mb-5 lg:w-auto">
+            {/* <img src="./img/vector.svg"></img> */}
           </div>
-          <div className="justify-center flex relative lg:mb-5 lg:w-auto m-auto">
-            <img src="./img/vector.svg"></img>
+          <div className="relative flex justify-center m-auto lg:mb-5 lg:w-auto">
+            {/* <img src="./img/vector.svg"></img> */}
           </div>
         </div>
       </div>

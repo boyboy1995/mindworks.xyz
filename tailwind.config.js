@@ -37,5 +37,5 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [require("@tailwindcss/aspect-ratio"), require("tailwindcss-font-inter")],
+  plugins: [require("@tailwindcss/aspect-ratio")],
 };
