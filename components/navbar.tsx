@@ -1,6 +1,7 @@
 import Link from "next/link";
 import ThemeChanger from "./DarkSwitch";
 import { Disclosure } from "@headlessui/react";
+import Button from "./button";
 import { Menu } from "@headlessui/react";
 
 export default function Navbar() {
@@ -70,9 +71,10 @@ export default function Navbar() {
                       </Link>
                     ))}
                     <Link href="/">
-                      <a className="w-full px-6 py-2 mt-3 text-center text-white rounded-md bg-gradient-to-r from-mindworks-pink to-mindworks-purple hover:bg-gradient-to-l focus:ring-4 focus:ring-purple-200 dark:focus:ring-purple-800 lg:ml-5">
-                        Contact us
-                      </a>
+                    <Button
+      className="" href="/" name="Contact Us"
+      >
+      </Button>
                     </Link>
                   </>
                 </Disclosure.Panel>
@@ -184,9 +186,10 @@ export default function Navbar() {
 
         <div className="hidden mr-3 space-x-4 lg:flex nav__item">
           <Link href="/">
-            <a className="px-6 py-2 text-white rounded-md bg-gradient-to-r from-mindworks-pink to-mindworks-purple md:ml-5 hover:opacity-80">
-              Contact us
-            </a>
+          <Button
+      className="" href="/" name="Contact Us"
+      >
+      </Button>
           </Link>
 
           <ThemeChanger />
